@@ -1,0 +1,16 @@
+title: PEEPER
+description: Fixing Security Issues with wifi SSID
+template:
+  repo: peeper-template
+  name: peeper
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
